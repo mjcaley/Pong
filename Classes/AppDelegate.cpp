@@ -1,5 +1,7 @@
 #include "AppDelegate.h"
 
+#include <ctime>
+
 #include "MainMenu.h"
 
 USING_NS_CC;
