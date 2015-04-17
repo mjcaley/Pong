@@ -73,7 +73,6 @@ Vec2 Ball::randomDirection()
     
     y = -1 + static_cast<float> (rand()) /( static_cast <float> (RAND_MAX/(1 - -1)));
     
-    CCLOG("Random direction: %f, %f", x, y);
     return Vec2(x, y);
 }
 

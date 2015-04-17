@@ -117,6 +117,10 @@ void MainMenu::onKeyReleased(EventKeyboard::KeyCode keyCode, Event *event)
     if (keyCode == EventKeyboard::KeyCode::KEY_ESCAPE)
     {
         Director::getInstance()->popScene();
+        if (Game::getGameState() == GameState::Reset)
+        {
+            return;
+        }
         Game::setGameState(GameState::Play);
     }
 }
