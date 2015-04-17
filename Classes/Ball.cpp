@@ -60,7 +60,6 @@ Ball* Ball::create(const std::string &filename, const Rect rect)
 
 Vec2 Ball::randomDirection()
 {
-    // TODO: Random number generator needed
     float x, y;
     if (std::rand() % 2 == 0)
     {
